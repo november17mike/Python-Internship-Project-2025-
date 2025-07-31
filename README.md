@@ -80,8 +80,8 @@ Projects│
 
 **How to Run the Projects:**
 # Clone this repository
-git clone https://github.com/your-username/Internship-Projects-2025.git
-cd Internship-Projects-2025/ProjectName/*
+git clone https://github.com/november17mike/Python-Internship-Project-2025-
+cd Internship-Projects-2025/ProjectName/
 
 # Set up virtual environment:
 python -m venv venv
