@@ -1,0 +1,6 @@
+Required libraries to be installed beforehand:
+-SpeechRecognition
+-pyttsx3
+-pyaudio
+-requests
+-beautifulsoup4

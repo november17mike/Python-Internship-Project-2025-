@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Speech to Image</title>
+</head>
+<body>
+  <h1>Speech to Image Generator</h1>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="audio" accept="audio/*" required />
+    <button type="submit">Upload & Generate</button>
+  </form>
+
+  {% if loading %}
+    <p>Processing... Please wait.</p>
+    <meta http-equiv="refresh" content="5"> <!-- Auto refresh every 5 seconds -->
+  {% endif %}
+
+  {% if result %}
+    <p>{{ result }}</p>
+  {% endif %}
+
+  {% if image %}
+    <img src="{{ url_for('static', filename=image) }}" alt="Generated Image" style="max-width:500px;" />
+  {% endif %}
+</body>
+</html>
